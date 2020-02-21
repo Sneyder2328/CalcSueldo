@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcSueldo1.0", "CalcSueldo1.0\CalcSueldo1.0.csproj", "{734D1D77-9F00-417D-BF63-A8D4C36E7E5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{734D1D77-9F00-417D-BF63-A8D4C36E7E5B}.Debug|x86.ActiveCfg = Debug|x86
+		{734D1D77-9F00-417D-BF63-A8D4C36E7E5B}.Debug|x86.Build.0 = Debug|x86
+		{734D1D77-9F00-417D-BF63-A8D4C36E7E5B}.Release|x86.ActiveCfg = Release|x86
+		{734D1D77-9F00-417D-BF63-A8D4C36E7E5B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

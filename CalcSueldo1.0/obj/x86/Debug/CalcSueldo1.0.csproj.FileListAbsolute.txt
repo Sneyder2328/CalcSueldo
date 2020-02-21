@@ -1,0 +1,5 @@
+/home/sneyder/Projects/CalcSueldo1.0/CalcSueldo1.0/bin/Debug/CalcSueldo1.0.exe
+/home/sneyder/Projects/CalcSueldo1.0/CalcSueldo1.0/bin/Debug/CalcSueldo1.0.pdb
+/home/sneyder/Projects/CalcSueldo1.0/CalcSueldo1.0/obj/x86/Debug/CalcSueldo1.0.csprojAssemblyReference.cache
+/home/sneyder/Projects/CalcSueldo1.0/CalcSueldo1.0/obj/x86/Debug/CalcSueldo1.0.exe
+/home/sneyder/Projects/CalcSueldo1.0/CalcSueldo1.0/obj/x86/Debug/CalcSueldo1.0.pdb

@@ -33,7 +33,8 @@ public partial class MainWindow
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.vbox1 = new global::Gtk.VBox();
 		this.vbox1.Name = "vbox1";
-		this.vbox1.Spacing = 6;
+		this.vbox1.Spacing = 5;
+		this.vbox1.BorderWidth = ((uint)(5));
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox();
 		this.hbox1.Name = "hbox1";

@@ -14,7 +14,8 @@
     <child>
       <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
-        <property name="Spacing">6</property>
+        <property name="Spacing">5</property>
+        <property name="BorderWidth">5</property>
         <child>
           <widget class="Gtk.HBox" id="hbox1">
             <property name="MemberName" />

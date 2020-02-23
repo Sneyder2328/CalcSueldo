@@ -37,8 +37,7 @@ public partial class MainWindow : Gtk.Window {
 
     public void ValidarNro(Entry ent) {
         string newStr = "";
-
-        foreach (var c in ent.Text) {
+        foreach (char c in ent.Text) {
             if (c >= '0' && c <= '9') 
                 newStr += c;
         }
@@ -48,11 +47,12 @@ public partial class MainWindow : Gtk.Window {
     public void ValidarNroDecimal(Entry ent){
         string newStr = "";
         int cont = 0;
-        foreach (var c in ent.Text) {
+        foreach (char c in ent.Text) {
             if (c >= '0' && c <= '9' || c == '.' || c == ','){
                 if (c == ',' || c == '.'){
-                    if (cont == 0 && newStr != "") 
-                    newStr += ',';
+                    if (cont == 0 && newStr != "") {
+                        newStr += ',';
+                    }
                     cont++;
                 } else 
                     newStr += c;
@@ -61,9 +61,9 @@ public partial class MainWindow : Gtk.Window {
         ent.Text = newStr;
     }
 
-    public void ValidarBoton(Button bton, params Entry[] texts){
-        for (int i = 0; i < texts.Length; i++){
-            if (string.IsNullOrEmpty(texts[i].Text)){
+    public void ValidarBoton(Button bton, params Entry[] entries){
+        foreach (Entry entry in entries){
+            if (string.IsNullOrEmpty(entry.Text)){
                 bton.Sensitive = false;
                 return;
             }

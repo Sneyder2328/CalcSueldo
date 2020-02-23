@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.CalcSueldo1.0 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MainWindow.cs">
     <Files>
-      <File FileName="MainWindow.cs" Line="28" Column="60" />
+      <File FileName="MainWindow.cs" Line="41" Column="39" />
       <File FileName="Program.cs" Line="13" Column="1" />
     </Files>
     <Pads>
@@ -16,9 +16,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

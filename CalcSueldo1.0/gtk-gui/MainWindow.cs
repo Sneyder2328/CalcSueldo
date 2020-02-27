@@ -23,6 +23,12 @@ public partial class MainWindow
 
 	private global::Gtk.Entry nuevoSueldoEntry;
 
+	private global::Gtk.HBox hbox4;
+
+	private global::Gtk.Button button1;
+
+	private global::Gtk.Button button2;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -34,7 +40,7 @@ public partial class MainWindow
 		this.vbox1 = new global::Gtk.VBox();
 		this.vbox1.Name = "vbox1";
 		this.vbox1.Spacing = 5;
-		this.vbox1.BorderWidth = ((uint)(5));
+		this.vbox1.BorderWidth = ((uint)(8));
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox();
 		this.hbox1.Name = "hbox1";
@@ -119,6 +125,37 @@ public partial class MainWindow
 		w9.Position = 2;
 		w9.Expand = false;
 		w9.Fill = false;
+		// Container child vbox1.Gtk.Box+BoxChild
+		this.hbox4 = new global::Gtk.HBox();
+		this.hbox4.Name = "hbox4";
+		this.hbox4.Spacing = 6;
+		// Container child hbox4.Gtk.Box+BoxChild
+		this.button1 = new global::Gtk.Button();
+		this.button1.CanFocus = true;
+		this.button1.Name = "button1";
+		this.button1.UseUnderline = true;
+		this.button1.Label = global::Mono.Unix.Catalog.GetString("Limpiar");
+		this.hbox4.Add(this.button1);
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.button1]));
+		w10.Position = 0;
+		w10.Expand = false;
+		w10.Fill = false;
+		// Container child hbox4.Gtk.Box+BoxChild
+		this.button2 = new global::Gtk.Button();
+		this.button2.CanFocus = true;
+		this.button2.Name = "button2";
+		this.button2.UseUnderline = true;
+		this.button2.Label = global::Mono.Unix.Catalog.GetString("Salir");
+		this.hbox4.Add(this.button2);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.button2]));
+		w11.Position = 1;
+		w11.Expand = false;
+		w11.Fill = false;
+		this.vbox1.Add(this.hbox4);
+		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox4]));
+		w12.Position = 3;
+		w12.Expand = false;
+		w12.Fill = false;
 		this.Add(this.vbox1);
 		if ((this.Child != null))
 		{
@@ -131,5 +168,7 @@ public partial class MainWindow
 		this.sueldoBaseEntry.Changed += new global::System.EventHandler(this.OnSueldoBaseChanged);
 		this.cantHijosEntry.Changed += new global::System.EventHandler(this.OnCantHijosChanged);
 		this.calcularSueldoBtn.Clicked += new global::System.EventHandler(this.CalcularNuevoSueldo);
+		this.button1.Clicked += new global::System.EventHandler(this.OnLimpiar);
+		this.button2.Clicked += new global::System.EventHandler(this.OnSalirClicked);
 	}
 }

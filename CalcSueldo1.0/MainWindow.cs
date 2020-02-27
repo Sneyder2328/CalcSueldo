@@ -48,14 +48,11 @@ public partial class MainWindow : Gtk.Window {
         string newStr = "";
         int cont = 0;
         foreach (char c in ent.Text) {
-            if (c >= '0' && c <= '9' || c == '.' || c == ','){
-                if (c == ',' || c == '.'){
-                    if (cont == 0 && newStr != "") {
-                        newStr += ',';
-                    }
-                    cont++;
-                } else 
-                    newStr += c;
+            if (c >= '0' && c <= '9'){
+                newStr += c;
+            } else if (c == '.' || c == ',' && cont == 0 && newStr != "") {
+                newStr += ',';
+                cont++;
             }
         }
         ent.Text = newStr;
@@ -69,5 +66,20 @@ public partial class MainWindow : Gtk.Window {
             }
         }
         bton.Sensitive = true;
+    }
+
+    protected void OnSalirClicked(object sender, EventArgs e) {
+        Application.Quit();
+        this.Destroy();
+    }
+
+    protected void OnLimpiar(object sender, EventArgs e) {
+        LimpiarEntries(sueldoBaseEntry, cantHijosEntry, nuevoSueldoEntry);
+    }
+
+    protected void LimpiarEntries(params Entry[] entries) {
+        foreach(Entry entry in entries) {
+            entry.Text = "";
+        }
     }
 }

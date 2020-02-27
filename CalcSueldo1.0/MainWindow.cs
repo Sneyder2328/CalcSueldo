@@ -50,7 +50,7 @@ public partial class MainWindow : Gtk.Window {
         foreach (char c in ent.Text) {
             if (c >= '0' && c <= '9'){
                 newStr += c;
-            } else if (c == '.' || c == ',' && cont == 0 && newStr != "") {
+            } else if ((c == '.' || c == ',') && cont == 0 && newStr != "") {
                 newStr += ',';
                 cont++;
             }
